@@ -21,3 +21,11 @@
 #
 #Delete these comments before commit!
 #Good luck.
+def addMatris(x,y):
+res=[]
+for i in range(len(x)):
+row=[0]
+for j in range(len x[0])
+row.append(a[i][j]+b[i][j])
+res.append(row)
+return res
