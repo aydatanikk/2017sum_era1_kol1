@@ -21,11 +21,44 @@
 #
 #Delete these comments before commit!
 #Good luck.
-def addMatris(x,y):
-res=[]
-for i in range(len(x)):
-row=[0]
-for j in range(len x[0])
-row.append(a[i][j]+b[i][j])
-res.append(row)
-return res
+print("First matrix:")
+# 2x2 matrix
+matrix = []
+for number in range(2):
+    matrix.append([])
+for list in matrix:
+    for number in range(2):
+        number2 = int(raw_input("Please enter fist matris numbers:"))
+        list.append(number2)
+# check if exist
+for list in matrix:
+    for number in list:
+        print number,
+    print
+
+
+
+print("Second matrix:")
+# 2x2 matrix
+matrix2 = []
+for number1 in range(2):
+    matrix2.append([])
+for list in matrix2:
+    for number1 in range(2):
+        number22 = int(raw_input("Please enter second matrix numbers:"))
+        list.append(number22)
+# check if exist
+for list in matrix2:
+    for number1 in list:
+        print number1,
+    print
+
+#sum
+print("Sum of two matrix:")
+matrix3=matrix+matrix2
+print matrix3
+
+summatrix = []
+summatrix=matrix+matrix2
+print(summatrix)
+
