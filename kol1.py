@@ -21,44 +21,53 @@
 #
 #Delete these comments before commit!
 #Good luck.
-print("First matrix:")
-# 2x2 matrix
-matrix = []
-for number in range(2):
-    matrix.append([])
-for list in matrix:
-    for number in range(2):
-        number2 = int(raw_input("Please enter fist matris numbers:"))
-        list.append(number2)
-# check if exist
-for list in matrix:
-    for number in list:
-        print number,
-    print
+def addMatrix(matrix1,matrix2):
+    res=[][]
+    a=0
+    for	a in range (2)
+		b=0	
+		for b in range (2)
+			res[a][b]=matrix1[a][b]+matrix2[a][b]
+return res
+
+def subMatrix(matrix1,matrix2):
+    res=[][]
+    a=0
+    for	a in range (2)
+		b=0	
+		for b in range (2)
+			res[a][b]=matrix1[a][b]-matrix2[a][b]
+return res 
 
 
-
-print("Second matrix:")
-# 2x2 matrix
-matrix2 = []
-for number1 in range(2):
-    matrix2.append([])
-for list in matrix2:
-    for number1 in range(2):
-        number22 = int(raw_input("Please enter second matrix numbers:"))
-        list.append(number22)
-# check if exist
-for list in matrix2:
-    for number1 in list:
-        print number1,
-    print
-
-#sum
-print("Sum of two matrix:")
-matrix3=matrix+matrix2
-print matrix3
-
-summatrix = []
-summatrix=matrix+matrix2
-print(summatrix)
+def mulMatrix(matrix1,matrix2):
+    res=[][]
+    a=0
+    for	a in range (2)
+		b=0	
+		for b in range (2)
+			res[a][b]=matrix1[a][b]*matrix2[a][b]
+return res 
+    
+class TestMatrix:
+    print("Additon of matrix\n")
+    matrix1=[2][4]
+    matrix2=[3][5]
+    result=addMatrix(matrix1,matrix2);
+    print(result)
+    
+    print("Subtraction of matrix\n")
+    matrix1=[2][4]
+    matrix2=[3][5]
+    result=subMatrix(matrix1,matrix2);
+    print(result)
+    
+    print("Multiplication of matrix\n")
+    matrix1=[2][4]
+    matrix2=[3][5]
+    result=mulMatrix(matrix1,matrix2);
+    print(result)
+    
+    
+    
 
